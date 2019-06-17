@@ -1,0 +1,88 @@
+/**Kuba 17.06.19*/
+//Jest to klasa main
+public class Main {
+    byte b = 127; // -128 do 127
+    short s = 32767; // -32768 do 32767
+    int i = -2147483648; // -2147483648 do 2147483647
+    long l = 121313213132416545l; //dużo musi się kończyć literka l
+    float f = 3.444444f; // -3,4*10*38 do 3,4*10*38 musi się kończyć literka f
+    double d = 3.777765656564545; // dużo nie musi się kończyć literką d
+    char c = 'a'; //większość liter, jedna literka
+    String string = "To jest jakiś tekst";
+    public static void main (String[] args)
+    {
+        byte b1 = 127;
+        b1++;
+        b1++;
+        b1++;
+        System.out.println(b1);
+
+        float wynik1, wynik2 = 7, wynik3, wynik4, wynik5, wynik6;
+        float l1 = 56;
+        float l2 = 16;
+        wynik1 = l1+l2;
+        wynik3 = l1-l2;
+        wynik4 = l1*l2;
+        wynik5 = l1/l2;
+        wynik6 = l1%l2;
+        System.out.println("");
+        System.out.println("Wynik 1 = "+ wynik1);
+        System.out.println("Wynik 2 = "+ wynik2);
+        System.out.println("Wynik 3 = "+ wynik3);
+        System.out.println("Wynik 4 = "+ wynik4);
+        System.out.println("Wynik 5 = "+ wynik5);
+        System.out.println("Wynik 6 = "+ wynik6);
+        wynik6++;
+        wynik6++;
+        wynik6++;
+        System.out.println("Wynik 6 = "+ wynik6);
+        wynik1--;
+        wynik1--;
+        wynik1--;
+        System.out.println("Wynik 1 = "+ wynik1);
+
+        float z1 = 15f, z2 = 5f;
+        float wynik11 = z1+z2;
+        float wynik22 = z1-z2;
+        float wynik33 = z1*z2;
+        float wynik44 = z1/z2;
+        float wynik55 = z1%z2;
+        System.out.println("Wynik11 = " + wynik11);
+        System.out.println("Wynik22 = " + wynik22);
+        System.out.println("Wynik33 = " + wynik33);
+        System.out.println("Wynik44 = " + wynik44);
+        System.out.println("Wynik55 = " + wynik55);
+
+        char letter ='a';
+        letter++;
+        letter++;
+        letter++;
+        System.out.println("Literka = " + letter );
+
+        double d1 = 10.123456789;
+        System.out.println("Cos = "+ d1);
+        d1++;
+        d1++;
+        d1++;
+        d1++;
+        d1++;
+        d1++;
+        d1++;
+        d1++;
+        d1++;
+        d1++;
+        System.out.println("Cos = "+ d1);
+
+        String s1 = "Wynikiem dodawania liczby 2 i 2 jest";
+        int li = 2;
+        System.out.println(s1+" "+(li+li));
+
+        float r = 47f,  pi = 3.14f;
+        float p = pi*(r*r);
+        float o = 2*pi*r;
+        System.out.println("Pole wynosi = "+p);
+        System.out.println("Obwód wynosi = "+o);
+
+
+    }
+}
